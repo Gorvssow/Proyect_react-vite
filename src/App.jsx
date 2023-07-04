@@ -4,9 +4,10 @@ import Button from "./Componets/Button.jsx";
 import Navbar from "./Componets/navbar.jsx";
 import Footer from "./Componets/footer.jsx";
 import SliderBanner from "./Componets/SliderBanner.jsx";
-
+import Cards from "./Componets/Cards.jsx";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
 
 function App() {
 
@@ -22,7 +23,16 @@ function App() {
                 <SliderBanner />
             </div>
 
+            <h1 className="cards-heading">Mis tarjetas</h1>
+            <div className="cards-container">
+
+                <Cards />
+            </div>
+
+
         </div>
+
+
 
           <Footer/>
 

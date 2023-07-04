@@ -5,7 +5,7 @@ import "../Styles/navbar.css"
 function Navbar() {
     return(
         <nav className="nav">
-            <a href="#" className="nav__brand">Herdoy</a>
+            <a href="#" className="nav__brand">BLACKNOISE</a>
             <ul className="nav__menu">
                 <li className="nav__item"><a href="#" className="nav__link">HOME</a></li>
                 <li className="nav__item"><a href="#" className="nav__link">ABOUT</a></li>
