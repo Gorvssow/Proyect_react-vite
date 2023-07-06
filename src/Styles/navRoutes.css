@@ -1,0 +1,24 @@
+.nav-routes {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-routes li {
+    margin-right: 10px;
+}
+
+.nav-routes li:last-child {
+    margin-right: 0;
+}
+
+.nav-routes a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-routes a:hover {
+    color: #ff0000; /* Cambia el color de fondo al hacer hover */
+}

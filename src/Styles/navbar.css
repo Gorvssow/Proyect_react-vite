@@ -15,6 +15,10 @@ body {
     z-index: 9999;
 }
 
+.content {
+    margin-top: 60px;
+}
+
 .nav__brand {
     font-size: 24px;
     font-weight: bold;

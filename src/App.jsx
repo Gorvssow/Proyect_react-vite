@@ -1,45 +1,33 @@
-
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 import './App.css'
-import Button from "./Componets/Button.jsx";
-import Navbar from "./Componets/navbar.jsx";
-import Footer from "./Componets/footer.jsx";
-import SliderBanner from "./Componets/SliderBanner.jsx";
-import Cards from "./Componets/Cards.jsx";
+import Navbar from "./Components/navbar.jsx";
+import Footer from "./Components/footer.jsx";
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Home from "./Components/Home.jsx";
+import Profesores from "./Components/Profesores.jsx";
+import Grupos from "./Components/Grupos.jsx";
 
 
 function App() {
-
-  return (
-      <div className="app-container">
-          <Navbar />
-
-        <div className="content-container">
-            {/*<Button label={"Hola Todo en Subastas"}/>*/}
-            {/*<Button disabled={true}/>*/}
-            <h1>Slider de Banners</h1>
-            <div className="slider-container">
-                <SliderBanner />
+    return (
+        <Router>
+            <div className="app-container">
+                <Navbar />
+                <div className="content-container">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/Grupos" element={<Grupos />} />
+                        <Route path="/Profesores" element={<Profesores />} />
+                    </Routes>
+                </div>
             </div>
-
-            <h1 className="cards-heading">Mis tarjetas</h1>
-            <div className="cards-container">
-
-                <Cards />
-            </div>
-
-
-        </div>
-
-
-
-          <Footer/>
-
-      </div>
-
-  )
-
+            <Footer />
+        </Router>
+    );
 }
 
-export default App
+export default App;
