@@ -3,16 +3,20 @@ import React from "react";
 import './App.css'
 import Navbar from "./Components/navbar.jsx";
 import Footer from "./Components/footer.jsx";
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from "./Components/Home.jsx";
-import Profesores from "./Components/Profesores.jsx";
-import Grupos from "./Components/Grupos.jsx";
+import Games from "./Components/./Games.jsx";
+import Development from "./Components/Development.jsx";
+import Contact from "./Components/Contact.jsx";
+import Equipment from "./Components/Equipment.jsx";
+import Blog from "./Components/Blog.jsx";
+import AdminBlog from "./Modules/Admin/Components/AdminBlog.jsx";
 
 
 function App() {
+
     return (
         <Router>
             <div className="app-container">
@@ -20,8 +24,13 @@ function App() {
                 <div className="content-container">
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/Grupos" element={<Grupos />} />
-                        <Route path="/Profesores" element={<Profesores />} />
+                        <Route path="/Development" element={<Development />} />
+                        <Route path="/Games" element={<Games />} />
+                        <Route path="/Equipment" element={<Equipment />}/>
+                        <Route path="/Contact" element={<Contact />}/>
+                        <Route path="/Blog" element={<Blog />}/>
+                        <Route path="/Adminblog" element={<AdminBlog />}/>
+
                     </Routes>
                 </div>
             </div>
