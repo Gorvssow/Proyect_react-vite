@@ -22,11 +22,13 @@ function Navbar() {
         <nav className="flex items-center justify-between p-4 bg-gray-800 text-white">
             <div className="flex items-center">
                 <div className="mr-2">
-                    <div
-                        className="border border-gray-400 shadow hover:bg-gray-200 flex justify-center items-center p-2 cursor-pointer"
-                        onClick={toggleDrawer}
-                    >
-                        <MenuIcon />
+                    <div className="border-b-2 border-gray-400">
+                        <div
+                            className="shadow hover:bg-gray-200 flex justify-center items-center p-2 cursor-pointer"
+                            onClick={toggleDrawer}
+                        >
+                            <MenuIcon />
+                        </div>
                     </div>
                     <Drawer
                         anchor="left"
@@ -89,4 +91,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

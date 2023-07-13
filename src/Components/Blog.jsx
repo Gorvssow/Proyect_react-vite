@@ -10,12 +10,12 @@ const novedades = [
 
 function Blog() {
     return (
-        <div>
+        <div className="mt-8">
             <div className="text-5xl font-extrabold ...">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-red-500">
-                   BLOGGER
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-red-500">
+                   Blog
                 </span>
-            </div>
+        </div>
             <h2 className="text-2xl font-bold mt-8">Novedades agregadas:</h2>
             <ul>
                 {novedades.map((novedad) => (
