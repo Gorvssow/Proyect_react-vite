@@ -4,7 +4,13 @@ import "../Styles/navbar.css";
 import NavRoutes from "../routes/NavRoutes.jsx";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Drawer, Grid, List, ListItem, ListItemText } from "@mui/material";
+import HomeIcon from '@mui/icons-material/Home';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
+import MailIcon from '@mui/icons-material/Mail';
+import NoteIcon from '@mui/icons-material/Note';
+import GroupsIcon from '@mui/icons-material/Groups';
+import {Drawer, Grid, List, ListItem, ListItemIcon, ListItemText} from "@mui/material";
 import iconoPNG from "../img/Drawer/icon_drawer.png";
 
 function Navbar() {
@@ -47,32 +53,50 @@ function Navbar() {
                             <Grid container direction="column" spacing={2}>
                                 <Grid item>
                                     <ListItem button component={Link} to="/">
+                                        <ListItemIcon>
+                                            <HomeIcon />
+                                        </ListItemIcon>
                                         <ListItemText primary="Home" />
                                     </ListItem>
                                 </Grid>
                                 <Grid item>
                                     <ListItem button component={Link} to="/Games">
+                                        <ListItemIcon>
+                                            <SportsEsportsIcon />
+                                        </ListItemIcon>
                                         <ListItemText primary="Games" />
                                     </ListItem>
                                 </Grid>
                                 <Grid item>
                                     <ListItem button component={Link} to="/Development">
+                                        <ListItemIcon>
+                                            <DeveloperModeIcon />
+                                        </ListItemIcon>
                                         <ListItemText primary="Development" />
                                     </ListItem>
                                 </Grid>
                                 <Grid item>
                                     <ListItem button component={Link} to="/Equipment">
+                                        <ListItemIcon>
+                                            <GroupsIcon />
+                                        </ListItemIcon>
                                         <ListItemText primary="Equipment" />
                                     </ListItem>
                                 </Grid>
                                 <Grid item>
                                     <ListItem button component={Link} to="/Contact">
+                                        <ListItemIcon>
+                                            <MailIcon />
+                                        </ListItemIcon>
                                         <ListItemText primary="Contact" />
                                     </ListItem>
                                 </Grid>
                                 <Grid item>
-                                    <ListItem button component={Link} to="/Blog">
-                                        <ListItemText primary="Blog" />
+                                    <ListItem button component={Link} to="/VideoBlog">
+                                        <ListItemIcon>
+                                            <NoteIcon />
+                                        </ListItemIcon>
+                                        <ListItemText primary="VideoBlog" />
                                     </ListItem>
                                 </Grid>
                             </Grid>

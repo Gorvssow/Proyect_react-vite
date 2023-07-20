@@ -43,9 +43,9 @@ function NavRoutes() {
                 </Link>
             </li>
             <li className="mr-4">
-                <Link to="/Blog" className="text-decoration-none">
+                <Link to="/VideoBlog" className="text-decoration-none">
                     <div className="border border-gray-400 shadow hover:bg-gray-200 flex justify-center items-center p-2">
-                        <span className="linkStyle">Blog</span>
+                        <span className="linkStyle">VideoBlog</span>
                     </div>
                 </Link>
             </li>

@@ -1,13 +1,13 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React from 'react';
 import localizacionImage from "../img/Location/localizacion.png"
-
+import mongoose from 'mongoose';
 
 function Contact() {
 
     return (
 
-            <div className="bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-gray-400 to-gray-100 bg-gradient-to-r max-w-32xl mx-auto bg-white p-32 shadow-md rounded-md flex mt-12">
+            <div className="bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-gray-400 to-gray-100 max-w-32xl mx-auto bg-white p-32 shadow-md rounded-md flex mt-12">
                 <div className="w-1/2 pr-8">
                     <h2 className="text-3xl font-bold text-gray-800 mb-6">Contactanos</h2>
                     <form className="space-y-6">
@@ -69,7 +69,6 @@ function Contact() {
                         </div>
                         <div>
                             <button
-                                type="submit"
                                 className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                             >
                                 Enviar mensaje
